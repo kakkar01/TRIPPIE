@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group
+    android:checkableBehavior="single">
+    <item
+        android:icon="@drawable/home_1"
+        android:id="@+id/nav_home"
+        android:title="HOME" />
+    <item
+        android:icon="@drawable/search_icon"
+        android:id="@+id/nav_search"
+        android:title="SEARCH" />
+    <item
+        android:icon="@drawable/category"
+        android:id="@+id/nav_all_categories"
+        android:title="ALL CATEGORIES" />
+    <item
+        android:icon="@drawable/menu_misiing_item"
+        android:id="@+id/nav_add_missing_place"
+        android:title="ADD MISSING PLACE" />
+
+</group>
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/login"
+                    android:id="@+id/nav_login"
+                    android:title="LOGIN" />
+                <item
+                    android:icon="@drawable/profile"
+                    android:id="@+id/nav_profile"
+                    android:title="PROFILE" />
+                <item
+                    android:icon="@drawable/logout"
+                    android:id="@+id/nav_logout"
+                    android:title="LOGOUT" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Categories">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/restu"
+                    android:id="@+id/nav_restaurants"
+                    android:title="RESTURANTS" />
+                <item
+                    android:icon="@drawable/bank"
+                    android:id="@+id/nav_bank"
+                    android:title="BANKS" />
+                <item
+                    android:icon="@drawable/school"
+                    android:id="@+id/nav_education"
+                    android:title="EDUCATION" />
+                <item
+                    android:icon="@drawable/shop"
+                    android:id="@+id/nav_shop"
+                    android:title="SHOPS" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Share">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:icon="@drawable/share"
+                    android:id="@+id/nav_share"
+                    android:title="SHARE" />
+                <item
+                    android:icon="@drawable/rate_us"
+                    android:id="@+id/nav_rate_us"
+                    android:title="Rate Us" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

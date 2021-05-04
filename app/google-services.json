@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "808996174920",
+    "project_id": "trippie-286da",
+    "storage_bucket": "trippie-286da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808996174920:android:25ddf747e6f5a30cafec7d",
+        "android_client_info": {
+          "package_name": "com.example.trippie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808996174920-jvga93scu4365sten3ehroi71mkt6bfv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ6ZMEciJdgWBBZ9gXYdPiQynrgePt21A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808996174920-jvga93scu4365sten3ehroi71mkt6bfv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

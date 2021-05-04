@@ -1,0 +1,291 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fefefe"
+    android:orientation="vertical"
+    tools:context=".User.UserDashboard"
+    android:id="@+id/drawer_layout"
+    tools:ignore="InvalidId">
+
+   <com.google.android.material.navigation.NavigationView
+       android:id="@+id/navigation_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:theme="@style/navigationTheme"
+       android:background="#fefefe"
+       android:layout_gravity="start"
+       app:headerLayout="@layout/menu_header"
+       app:menu="@menu/main_menu"/>
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fefefe"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_centerVertical="true"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:src="@drawable/feather_menu" />
+        <ImageView
+            android:background="#fefefe"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            android:padding="5dp"
+            android:onClick="callRetailerScreen"
+            android:src="@drawable/filter_btn" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+
+                    android:id="@+id/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/fredericka_the_great"
+                    android:text="Trippie"
+                    android:textColor="@color/black"
+                    android:textSize="28sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/app_name"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/white"
+                    android:elevation="8dp"
+                    android:onClick="search">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="Search..." />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/search_icon" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
+                        <ImageView
+                            android:src="@drawable/car"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/card_1"
+                            android:elevation="8dp"
+                            android:layout_margin="10dp"
+                            android:onClick="opencab"></ImageView>
+                    </RelativeLayout>>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/hotel"
+                            android:background="@drawable/card_1"
+                            android:elevation="8dp"
+                            android:layout_margin="10dp"></ImageView>
+                    </RelativeLayout>>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/flights"
+                            android:background="@drawable/card_1"
+                            android:elevation="8dp"
+                            android:layout_margin="10dp"></ImageView>
+                    </RelativeLayout>>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:id="@+id/mapfragment"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="#fefefe"
+                            android:onClick="openmap"
+                            android:padding="5dp"
+                            android:src="@drawable/beach" />
+                    </RelativeLayout>>
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout    android:background="#fafafa"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:background="#adc9ff"
+                    android:id="@+id/featured_background"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="170dp"
+                    android:orientation="vertical"
+                    android:onClick="openflights">
+
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/oswald_bold"
+                        android:text="All Featured Locations"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="50dp"/>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="All Loactions Which Have Top Locations In Town!"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:background="#cfe"
+                    android:id="@+id/featured_recycler"
+                    android:layout_height="300dp"
+                    android:layout_toRightOf="@id/featured_background"
+                    android:layout_width="match_parent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:padding="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo_medium"
+                        android:text="Top Viewed !"
+                        android:textSize="20sp"></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View All"
+                        android:fontFamily="@font/exo_medium"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"></TextView>
+
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"></androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:padding="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo_medium"
+                        android:text="Catagories !"
+                        android:textSize="20sp"></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View All"
+                        android:fontFamily="@font/exo_medium"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"></TextView>
+
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"></androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

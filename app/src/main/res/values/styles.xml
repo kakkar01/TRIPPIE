@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#ffd5bf</item>
+        <item name="colorPrimaryDark">#FF6363</item>
+        <item name="colorAccent">#FAFAFA</item>
+    </style>
+    <style name="navigationTheme">
+        <item name="colorPrimary">#ffd5bf</item>
+        <item name="colorControlHighlight">#FF6363</item>
+
+    </style>
+</resources>
